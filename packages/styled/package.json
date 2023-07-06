@@ -1,0 +1,16 @@
+{
+  "name": "@beenary/styled-react-atoms",
+  "version": "1.0.0-alpha",
+  "description": "React Atomic components based on react-aria - with styles",
+  "main": "index.js",
+  "repository": "https://github.com/beenary-js/react-atoms",
+  "author": "quirk0o",
+  "license": "MIT",
+  "scripts": {
+    "gen": "hygen"
+  },
+  "bin": "./cli.js",
+  "devDependencies": {
+    "hygen": "^6.2.11"
+  }
+}
