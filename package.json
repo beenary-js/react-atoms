@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn build:watch\" \"yarn storybook\"",
+    "build": "yarn workspace @beenary/react-atoms build",
+    "build:watch": "yarn workspace @beenary/react-atoms build:watch",
+    "storybook": "yarn workspace example storybook",
+    "format": "prettier --loglevel warn --write \"**/*.{js,jsx,ts,tsx,css,less,scss,sass,html,json,md,mdx,yml,yaml,graphql,graphqls}\"",
+    "posttest": "npm run format",
+    "prepare": "husky install",
+    "lint": "eslint . --cache --fix --ext .ts,.tsx",
+    "pretest": "npm run lint",
+    "test": "yarn workspace @beenary/react-atoms test",
+    "test:watch": "yarn workspace @beenary/react-atoms test:watch",
+    "test:coverage": "yarn workspace @beenary/react-atoms test:coverage",
+    "gen": "yarn workspace example gen"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": ">=7",
+    "lint-staged": ">=10",
+    "prettier": ">=2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,less,scss,sass,html,json,md,mdx,yml,yaml,graphql,graphqls}": "prettier --write"
+  }
+}
