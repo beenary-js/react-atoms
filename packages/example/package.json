@@ -1,0 +1,34 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "gen": "yarn styled-react-atoms",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
+  },
+  "dependencies": {
+    "@beenary/react-atoms": "^0.0.1",
+    "@beenary/styled-react-atoms": "^0.0.1",
+    "@emotion/core": "^11.0.0",
+    "@emotion/css": "^11.11.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@storybook/addon-essentials": "^7.0.15",
+    "@storybook/addon-interactions": "^7.0.15",
+    "@storybook/addon-links": "^7.0.15",
+    "@storybook/addon-styling": "^1.3.0",
+    "@storybook/blocks": "^7.0.15",
+    "@storybook/react": "^7.0.15",
+    "@storybook/react-vite": "^7.0.15",
+    "@storybook/testing-library": "^0.1.0",
+    "@types/react": "^18.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.15",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.8"
+  }
+}

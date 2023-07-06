@@ -7,10 +7,12 @@
   "author": "quirk0o",
   "license": "MIT",
   "scripts": {
-    "gen": "hygen"
+    "gen": "node ./cli.js"
   },
   "bin": "./cli.js",
   "devDependencies": {
+    "enquirer": "^2.3.6",
+    "execa": "^7.1.1",
     "hygen": "^6.2.11"
   }
 }
